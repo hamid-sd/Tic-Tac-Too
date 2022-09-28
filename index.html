@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Too</title>
+	<meta charset="utf-8">
+	<meta name="robots" content="index,follow" />
+	<meta name="author" content="Abdelhamid SAIDI">
+	<meta name="description" content="My name is Abdelhamid Saidi,I’m 18 years old and I’m a Freelance Full Stack Developer and Graphic Designer based in Bejaia, Algeria, here is one of my projects">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div id="loaders">
+		<div class="loader">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	
+
+	<div class="container" id="cont1">
+		<img src="images/xo.png" id="logo">
+		<div id="choix">
+			<br>
+			<label id="lb1">PICK PLAYER 1'S MARK</label>
+			<br>
+			<div id="x-o">
+				<div id="x1"> </div>
+				<div id="x2"> </div>
+
+				<div id="c1"> </div>
+				<div id="c2"> </div>
+
+				<div id="grs"></div>	
+			</div>
+			<label id="lb2">REMEMBER: X GOES FIRST</label>
+		</div>
+		<button id="cpu">NEW GAME (VS CPU)</button>
+		<button id="amis">NEW GAME (VS PLAYER)</button>
+	</div>
+	<div class="container" id="cont2">
+		<div id="hed">
+			<img src="images/xo.png" style="width: 40px;">
+			<div id="turn">
+				<img src="images/x.png" style="height: 55%;margin-right: 5px;" id="trnim">
+				TURN
+			</div>
+			<button id="retun"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+		</div>
+
+		<div id="tabl">
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+			<button class="blc"><img src="#" class="imgs"></button>
+		</div>
+
+		<div id="foot">
+			<div id="xs">
+				<h4 id="xsx">X</h4>
+				<H2 id="xss">0</H2>
+			</div>
+			<div id="s">
+				<H4>TRIES</H4>
+				<H2 id="ss">0</H2>
+			</div>
+			<div id="os">
+				<H4 id="oso">O</H4>
+				<H2 id="oss">0</H2>
+			</div>
+		</div>
+	</div>
+	<div class="blr" id="howon">
+		<div class="ntf">
+			<p id="won1">YOU WON!</p>
+			<div id="won2">
+				<img src="images/x.png" id="xox">
+				<p id="ppp">TAKES THE ROUND</p>
+			</div>
+			<div style="margin-bottom: 10px;">
+				<button id="qit">QUIT</button>
+				<button id="nxt">NEXT ROUND</button>
+			</div>
+		</div>
+	</div>
+	<div class="blr" id="rest">
+		<div class="ntf" >
+			<h2 style="font-weight: bold;
+			font-size: 38px;color: #a9bfca;">RESTART GAME?</h2>
+			<div style="margin-bottom: 10px;"> 
+				<button id="no">NO,CANCEL</button>
+				<button id="yes">YES,RESTART</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
